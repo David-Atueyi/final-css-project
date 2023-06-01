@@ -1,0 +1,371 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+@font-face {
+    font-family: intel;
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+body {
+    background: #ddd;
+}
+
+
+.container {
+    min-width: 320px;
+}
+
+.container-child {
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: intel;
+}
+
+header {
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+.signup-header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.signup-header a .logo {
+    width: 60px;
+    height: 60px;
+}
+
+.signup-header a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #2e2e2e;
+}
+
+.form h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #777;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-box span {
+    position: absolute;
+    left: 5px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 16px;
+    color: #777;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+
+.input-box input:valid~span,
+.input-box input:focus~span {
+    color: #fb5507;
+    transform: translateX(10px);
+    transform: translateY(-7px);
+    font-size: 9.92px;
+    padding: 0 10px;
+    background: #ddd;
+    border-left: 1px solid #fb5507;
+    border-right: 1px solid #fb5507;
+    letter-spacing: 3.2px;
+}
+
+.input-box input:valid,
+.input-box input:focus {
+    border: 1px solid #fb5507;
+}
+
+.input-box input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+form button {
+    background: #fb5507;
+    padding: 15px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.other-info {
+    width: 94%;
+    margin: auto;
+    text-align: center;
+    border-top: 1px solid #777;
+}
+
+.other-info p {
+    margin: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.other-info h5 {
+    font-size: 14px;
+}
+
+.other-info button {
+    margin-top: 4px;
+    width: 100%;
+    border: 1px solid #fb5507;
+    border-radius: 5px;
+    background: #ddd;
+}
+
+.other-info button a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.signup-vector,
+.login-vector {
+    width: 40%;
+    height: 40%;
+    display: none;
+}
+
+.signup-vector img,
+.login-vector img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media screen and (min-width:900px) {
+    .container {
+        background: #fff;
+    }
+
+    header{
+        margin-bottom: 25px;
+    }
+
+    main {
+        z-index: 1;
+    }
+
+    .form {
+        color: #000;
+        padding: 30px 0px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.305);
+        position: relative;
+    }
+
+    .input-box input {
+        background: #dddddd70;
+    }
+
+    .input-box span {
+        color: #000;
+    }
+
+    .input-box input:valid,
+    .input-box input:focus {
+        background: #ddd;
+    }
+
+    .signup-vector,
+    .login-vector {
+        display: block;
+        position: absolute;
+
+    }
+
+    .img1 {
+        top: -130px;
+        right: -29px;
+        z-index: -1;
+    }
+
+
+    /* this is for succfully signed in */
+    .success-container {
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.16);
+        position: relative;
+    }
+
+    .success-container .success-vector-image {
+        display: block;
+        position: absolute;
+        top: 161px;
+        left: -200px;
+
+    }
+
+    /* this is for signin */
+
+    .login-other-method a {
+        box-shadow: 1px 1px 7px #00000050;
+        background: #fff;
+        border: none;
+    }
+
+    .img2-1 {
+        width: 160px;
+        height: 160px;
+        top: -81px;
+        right: -7px;
+    }
+
+}
+
+/* this is for succfully signed up */
+.success-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.success-container .orange-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: #7ec832;
+    font-size: 80px;
+    transform: translateY(-59px);
+}
+
+.orange-circle i {
+    color: #fff;
+}
+
+.success-container .text {
+    transform: translateY(-35px);
+    font-size: 13px;
+    width: 80%;
+}
+
+.success-container .text h1 {
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.success-container button {
+    background: #7ec832;
+    border: none;
+    width: 90%;
+    transform: translateY(-15px);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #dddddd62;
+    z-index: 2;
+}
+
+.success-container button a {
+    display: block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+.success-vector-image {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.success-vector-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* this is for signin */
+
+
+.login-other-method a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    padding: 13px 12px;
+    margin: 9px 0;
+    border: 1px solid #777;
+    color: #2e2e2e;
+    background: #ffffff49;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.login-other-method a i {
+    font-size: 17px;
+}
+
+.login-other-method a:nth-child(1) div {
+    width: 20px;
+    height: 20px;
+}
+
+.login-other-method a:nth-child(1) div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.login-other-method a:nth-child(2) i {
+    color: #1674ea;
+    padding-left: 2px;
+}

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Cart</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/zaid.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.4.0-web/css/all.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/cart.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-child">
+        <div class="header-container">
+          <header>
+            <div class="header-actions dropdown">
+              <div class="bar">
+                <i class="fa fa-bars"></i>
+              </div>
+              <div class="menu">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fa fa-apple-whole"></i>Food</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-heart-pulse"></i>Health & Beauty</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-house"></i>Home & Office</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-mobile"></i>Phones</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-desktop"></i>Computer</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-tv"></i>Electronics</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-vest-patches"></i>Fashion</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-baby"></i>Baby Products</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-gamepad"></i>Gaming</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-dumbbell"></i>Sports</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-car"></i>Automobile</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-list"></i>Other Catigories</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="header-actions logo">
+              <a href="./index.html">
+                <div class="image">
+                  <img src="./assets/images/zaid.png" alt="" />
+                </div>
+                <h1>ZAID</h1>
+              </a>
+            </div>
+            <div class="header-actions search-bar">
+              <form action="#">
+                <i class="fa fa-search"></i>
+                <input
+                  type="search"
+                  placeholder="Search Products, Brands and Catigories"
+                />
+                <link rel="stylesheet" href="./assets/css/product.css" />
+              </form>
+              <button>SEARCH</button>
+            </div>
+            <div class="header-actions auth">
+              <div class="user-icon">
+                <i class="fa fa-user"></i>
+                <p>Account</p>
+              </div>
+              <div class="user-activities">
+                <a href="./signup.html">SIGN UP</a>
+                <a href="./signin.html">SIGN IN</a>
+              </div>
+            </div>
+            <div class="header-actions cart-help">
+              <a href="#">
+                <i class="fa fa-circle-question"></i>
+                HELP</a
+              >
+              <a href="./cart.html">
+                <i class="fa fa-cart-shopping"></i>
+                <p>CART</p></a
+              >
+            </div>
+          </header>
+        </div>
+        <main>
+          <div class="cart-container">
+            <div class="section-one">
+              <p>CART (1)</p>
+              <div>
+                <div class="cart-items">
+                  <div class="image">
+                    <img src="./assets/images/cart/1 (20).jpg" alt="" />
+                  </div>
+                  <div class="description">
+                    <div class="title-price">
+                      <div class="title">
+                        <p>ADIDAS Adilette Aqua Unisex</p>
+                        <span>Size:</span><span>EU 37</span>
+                      </div>
+                      <div class="price">₦ 25,000</div>
+                    </div>
+                    <p class="remaining">
+                      <i class="fa fa-circle-exclamation"></i>5 units left
+                    </p>
+                    <div class="delivery-method">
+                      <p>ZAID</p>
+                      <p>
+                        <i class="fa fa-paper-plane">
+                          <i class="text">Express</i></i
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="addmore">
+                  <div class="remove">
+                    <i class="fa fa-trash"></i>
+                    <p>Remove</p>
+                  </div>
+                  <div class="add">
+                    <i class="fa fa-square-minus"></i>
+                    <p>1</p>
+                    <i class="fa fa-square-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-two">
+              <p>CART SUMMARY</p>
+              <div class="section-two-child">
+                <div class="subtotal">
+                  <p>SUBTOTAL</p>
+                  <p class="price">₦ 25,000</p>
+                </div>
+                <button><a href="./checkout.html">CHECKOUT (₦ 25,000)</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="section-three">
+            <div class="slide-container">
+              <p class="tag">Similar Product</p>
+              <div class="slide scroll-snap">
+                <a href="./product.html" class="slide-items">
+                  <span class="discount-percent">-52%</span>
+                  <div class="image">
+                    <img
+                      src="./assets/images/productpage/moreproduct/1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="description">
+                    <h4>Men's Square Style LED Digital Watch Binary Wrist</h4>
+                    <div class="flex-price">
+                      <p class="bold">₦ 2,800</p>
+                      <p class="line-through">₦ 5,870</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="./product.html" class="slide-items">
+                  <span class="discount-percent">-82%</span>
+                  <div class="image">
+                    <img
+                      src="./assets/images/productpage/moreproduct/1 (1).jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="description">
+                    <h4>
+                      Fngeen 05 Calendar Sporty Waterproof Quartz Men's
+                      Watch/Black
+                    </h4>
+                    <div class="flex-price">
+                      <p class="bold">₦ 5,000</p>
+                      <p class="line-through">₦ 28,000</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="./product.html" class="slide-items">
+                  <span class="discount-percent">-47%</span>
+                  <div class="image">
+                    <img
+                      src="./assets/images/productpage/moreproduct/1 (2).jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="description">
+                    <h4>
+                      Wlisth Luminous Tungsten Steel Waterproof Fashion Couple
+                      Watch
+                    </h4>
+                    <div class="flex-price">
+                      <p class="bold">₦ 2,999</p>
+                      <p class="line-through">₦ 5,683</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="./product.html" class="slide-items">
+                  <div class="image">
+                    <img
+                      src="./assets/images/productpage/moreproduct/1 (3).jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="description">
+                    <h4>Men Solid Black Leather Wristwatch & Bracelets</h4>
+                    <div class="flex-price">
+                      <p class="bold">₦ 4,999</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="./product.html" class="slide-items">
+                  <span class="discount-percent">-75%</span>
+                  <div class="image">
+                    <img
+                      src="./assets/images/productpage/moreproduct/1 (4).jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="description">
+                    <h4>Men Black Leather Wristwatch + Bracelets</h4>
+                    <div class="flex-price">
+                      <p class="bold">₦ 3,999</p>
+                      <p class="line-through">₦ 16,000</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="slide-container">
+              <p class="tag">You may also like</p>
+              <div class="slide scroll-snap">
+                <a href="./product.html" class="slide-items">
+                  <span class="discount-percent">-74%</span>
+                  <div class="image">
+                    <img
+                      src="./assets/images/productpage/moreproduct/1 (6).jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="description">
+                    <h4>
+                      Skmei Men Quartz Double Movements Luminous Digital Watch
+                    </h4>
+                    <div class="flex-price">
+                      <p class="bold">₦ 8,090</p>
+                      <p class="line-through">₦ 31,110</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="./product.html" class="slide-items">
+                  <span class="discount-percent">-60%</span>
+                  <div class="image">
+                    <img
+                      src="./assets/images/productpage/moreproduct/1 (7).jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="description">
+                    <h4>
+                      Silicone LED Digital Sports Electronic Wristwatch - Unisex
+                    </h4>
+                    <div class="flex-price">
+                      <p class="bold">₦ 1,999</p>
+                      <p class="line-through">₦ 5,000</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="./product.html" class="slide-items">
+                  <span class="discount-percent">-46%</span>
+                  <div class="image">
+                    <img
+                      src="./assets/images/productpage/moreproduct/1 (11).jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="description">
+                    <h4>
+                      Fngeen Business Waterproof Calendar Quartz Men's Watch-Silver
+                    </h4>
+                    <div class="flex-price">
+                      <p class="bold">₦ 4,990</p>
+                      <p class="line-through">₦ 9,215</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="./product.html" class="slide-items">
+                <span class="discount-percent">-51%</span>
+                  <div class="image">
+                    <img
+                      src="./assets/images/productpage/moreproduct/1 (17).jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="description">
+                    <h4>ORUSS Quartz Watch Men's Calendar Luminous Stailness Steel</h4>
+                    <div class="flex-price">
+                      <p class="bold">₦ 3,200</p>
+                      <p class="line-through">₦ 6,500</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="./product.html" class="slide-items">
+                <span class="discount-percent">-55%</span>
+                  <div class="image">
+                    <img
+                      src="./assets/images/productpage/moreproduct/1 (19).jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="description">
+                    <h4>Luxury Quartz Men's Wristwatch Waterproof + Leather Wallet</h4>
+                    <div class="flex-price">
+                      <p class="bold">₦ 4,500</p>
+                      <p class="line-through">₦ 10,000</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <div class="footer-section-one">
+            <div class="footer-container">
+              <div>
+                <i class="fa fa-truck"></i>
+                <div class="text">
+                  <h4>Free Delivery</h4>
+                </div>
+              </div>
+              <p>|</p>
+              <div>
+                <i class="fa fa-money-bill-1"></i>
+                <div class="text">
+                  <h4>cash on delivery</h4>
+                </div>
+              </div>
+              <p>|</p>
+              <div>
+                <i class="fa fa-gift"></i>
+                <div class="text">
+                  <h4>free gift box</h4>
+                </div>
+              </div>
+              <p>|</p>
+              <div>
+                <i class="fa-solid fa-square-phone"></i>
+                <div class="text">
+                  <h4>contact us</h4>
+                  <p>07084416618</p>
+                </div>
+              </div>
+              <p>|</p>
+              <div>
+                <i class="fa-solid fa-users"></i>
+                <div class="text">
+                  <h4>loyalty</h4>
+                  <p>rewarded</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-section-two">
+            <div class="footer-container">
+              <div class="mobile-view">
+                <div class="mobile-view_container">
+                  <div class="mobile-view_section">
+                    <div>
+                      <p>HELP CENTER</p>
+                      <p>TERMS & CONDITIONS</p>
+                      <p>COOKIE NOTE</p>
+                    </div>
+                    <div>
+                      <p>CONTACT US</p>
+                      <p>PRIVACY NOTICE</p>
+                      <p>BECOME A SELLER</p>
+                    </div>
+                  </div>
+                  <p>REPORT A PRODUCT</p>
+                  <p>SHIP YOUR PACKAGE ANYWHERE IN THE WORLD</p>
+                </div>
+                <p>All Rights Reserved</p>
+              </div>
+              <div class="footer-pc-view">
+                <div class="pc-view_section-one">
+                  <div>
+                    <h5>LET US HELP YOU</h5>
+                    <p>Help Center</p>
+                    <p>Contact Us</p>
+                    <p>How to shop on Zaid?</p>
+                    <p>Delivery options and timelines</p>
+                    <p>How to return a product on Zaid?</p>
+                    <p>Corporate and bulk purchases</p>
+                    <p>Report a Product</p>
+                    <p>Ship your package anywhere in the world</p>
+                    <p>Dispute Resolution Policy</p>
+                    <p>Returns and Refunds Policy</p>
+                  </div>
+                  <div>
+                    <h5>ABOUT ZAID</h5>
+                    <p>About us</p>
+                    <p>Zaid careers</p>
+                    <p>Zaid Express</p>
+                    <p>Terms and Conditions</p>
+                    <p>Privacy Notice</p>
+                    <p>Cookie Notice</p>
+                    <p>Zaid Global</p>
+                    <p>Official Stores</p>
+                    <p>Flash Sales</p>
+                  </div>
+                  <div>
+                    <h5>MAKE MONEY WITH ZAID</h5>
+                    <p>Sell on Zaid</p>
+                    <p>Become a Sales Consultant</p>
+                    <p>Become a Logistics Service Partner</p>
+                    <p>Join the zaid DA Academy</p>
+                    <p>Join the zaid KOL Program</p>
+                  </div>
+                  <div>
+                    <h5>ZAID INTERNATIONAL</h5>
+                    <div class="country">
+                      <div>
+                        <p>Algeria</p>
+                        <p>Ghana</p>
+                        <p>Egypt</p>
+                        <p>Morocco</p>
+                        <p>Zando</p>
+                      </div>
+                      <div>
+                        <p>Ivory Coast</p>
+                        <p>Uganda</p>
+                        <p>Tunisia</p>
+                        <p>Senegal</p>
+                        <p>Kenya</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pc-view_section-two">
+                  <div>
+                    <h5>JOIN US ON</h5>
+                    <div>
+                      <i class="fa-brands fa-facebook"></i>
+                      <i class="fa-brands fa-youtube"></i>
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>PAYMENT METHODS & DELIVERY PARTNERS</h5>
+                    <div>
+                      <i class="fa-brands fa-cc-mastercard"></i>
+                      <i class="fa-brands fa-cc-visa"></i>
+                      <i class="fa-brands fa-dhl"></i>
+                      <i class="fa-brands fa-amazon-pay"></i>
+                      <i class="fa-brands fa-paypal"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>New To Zaid?</h5>
+                    <p>
+                      Subscribe to our newslettwer to get updates on our latest
+                      offer
+                    </p>
+                    <div class="subscribe">
+                      <form action="submit">
+                        <i class="fa fa-envelope"></i>
+                        <input
+                          type="email"
+                          placeholder="Enter E-mail Address"
+                        />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
